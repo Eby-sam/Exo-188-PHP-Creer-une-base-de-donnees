@@ -22,14 +22,19 @@
 
 // TODO Votre code ici bas.
 
+$server = 'localhost';
+$user = 'root';
+$password = '';
+$db= 'cours_188';
+
 try {
-    $maConnexion = ........
+    $maConnexion = new PDO("mysql:host=$server;dbname=$db",$user ,$password);
 
     $request = "
         Ma super requête SQL pour créer une base de données.
     ";
 
-    $maConnexion->une super méthode pour exécuter ma requete
+    $maConnexion->exec($maConnexion);
 
     echo "La base de données intro_sql a bien été créée.";
 }
